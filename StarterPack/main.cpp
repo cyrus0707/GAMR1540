@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	int iScore = 
+	int iScore = 0;
 
 	char cIn;
 
