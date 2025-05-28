@@ -4,14 +4,13 @@ using namespace std;
 
 int main()
 {
-	int count;
-	count = 0;
-	while (count < 100)
+	cout << "i\tj" << endl;
+	for (int i = 0; i < 3; i++)
 	{
-		cout << count << endl;
-		count++;
-	}
-	cout << "Done" << endl;
-	return 0;
-	return 0;
+		for (int j = 0; j < 3; j++)
+		{
+			cout << i << "\t" << j << endl;
+		}
+
 }
+                 
