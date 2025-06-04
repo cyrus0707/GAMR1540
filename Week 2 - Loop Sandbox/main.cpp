@@ -1,27 +1,94 @@
 #include <iostream>
+#include <string>
 
 
 using namespace std;
 
-float fNumber = 5.0f;
-
-float square()
+float doublevalue(float x)
 {
-	float result;
-	result = fNumber * fNumber;
-	return result;
+	return x * 2;
 }
+
+float halfvalue(float x)
+{
+	return x / 2;
+}
+
+int main()
+{
+	string answer;
+	float fnumber;
+
+	cout << "Hello Mate, you tryna double of half a number youre going to input? " << endl;
+	cout << "Type 'double' or 'half': ";
+	cin >> answer;
+
+	cout << "Enter a number: ";
+	cin >> fnumber;
+
+	if (answer == "Double" || answer == "double")
+	{
+		fnumber = doublevalue(fnumber);
+		cout << "Your number is: " << fnumber << endl;
+	}
+
+	else if (answer == "Half" || answer == "half")
+	{
+		fnumber = halfvalue(fnumber);
+		cout << "Your number is: " << fnumber << endl;
+	}
+
+	else
+	{
+		cout << "Wrong input, type 'double' or 'half' silly billy: ";
+	}
+
+	return 0;
+
+}
+/*
+*float cube(float x)
+{
+	return x * x * x;
+}
+
+float square(float x)
+{
+	return x * x;
+}
+
 
 
 int main()
-
 {
-	float fAnotherNumber;
-	fAnotherNumber = square();
-	cout << fAnotherNumber << endl;
+	string answer;
+	float fnumber;
+
+	cout << " Hello would you like a number of your choice to be squared or cubed" << endl;
+	cout << "Type 'squared' or 'cubed': ";
+	cin >> answer;
+
+	cout << "Enter a number: ";
+	cin >> fnumber;
+
+
+	if (answer == "squared" || answer == "Squared") {
+		fnumber = square(fnumber);
+		cout << "The square of the number is: " << fnumber << endl;
+	}
+	else if (answer == "cubed" || answer == "Cubed") {
+		fnumber = cube(fnumber);
+		cout << " The cube of the number is: " << fnumber << endl;
+	}
+	else {
+		cout << "Invalid input. Please type 'squared' or 'cubed'." << endl;
+	}
+
 	system("pause");
 	return 0;
 }
+
+
 	
 /*
 char cChars[10];
